@@ -1,0 +1,74 @@
+/* CARD BONUS */
+
+.card_box {
+  width: 270px;
+  height: 450px;
+  border-radius: 20px;
+  background: linear-gradient(170deg, rgba(30, 27, 47, 0.7) 0%, #0f0e17 100%);
+  position: relative;
+  box-shadow: 0 0 25px 5px rgba(167, 134, 223, 0.3);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card_box:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 35px 10px rgba(167, 134, 223, 0.5);
+}
+
+ .span-card {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .span-card::before {
+  content: 'BÔNUS';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #510000 0%, #FF4242  51%, #510000  100%); 
+
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4f8;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(167, 134, 223, 0.25);
+}
+
+ .span-card::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #3a2a63;
+  background-image: linear-gradient(45deg, #510000 0%, #FF4242  51%, #510000  100%); 
+}
+ 
+/* BOTAO CTA */
+
+.button {
+  display: block;
+  border-radius: 7px;
+  border: none;
+  background: #29A201;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 14px 56px -11px #29A201;
+  transition: all 0.4s;
+  cursor: pointer;
+ }
+ 
